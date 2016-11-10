@@ -11,6 +11,9 @@
     "translate",
     "api"
   ],
+  "bin": {
+    "yat": "{prefix}/bin/translate"
+  },
   "author": "Andrey Sanatullov",
   "license": "ISC",
   "dependencies": {
