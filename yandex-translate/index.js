@@ -1,9 +1,9 @@
 var request = require('request');
-var cli = reuqire('./cli');
+var cli = require('./cli');
 
 var translateCallback = function(err, res, body) {
   if (!err) {
-    console.log(body);
+    console.log(JSON.parse(body).text[0]);
   }  
 }
 

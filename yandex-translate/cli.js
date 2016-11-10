@@ -15,11 +15,12 @@ else {
 
 program
   .version(version)
-  .option('-l, --lang', 'set lang from-to.')
-  .option('-t, --text', 'text for translate.')
+  .usage('[options] <text>')
+  .option('-l, --lang [text]', 'set lang from-to.')
+  .option('-t, --text [text]', 'text for translate.')
   .parse(process.argv);
 
 module.exports = {
-  text: program.text || '',
+  text: program.args[0] || '',
   lang: program.lang || 'en-ru'
 };
