@@ -1,7 +1,11 @@
 Using translate.yandex.ru API for cli.
 Default language is en-ru.
+You can use pipe.
 
-  Usage: yat [options] <text>
+  Installation
+    npm install ya-translate-cli -g  
+
+  Usage: yat [options] text-for-translate
 
   Options:
 
