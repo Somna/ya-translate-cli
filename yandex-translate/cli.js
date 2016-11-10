@@ -19,5 +19,6 @@ program
     .parse(process.argv);
 
 module.exports = {
-  lang: program.lang || 'en-ru'
+  lang: program.lang || 'en-ru',
+  text: program.args[0] || ''
 };
